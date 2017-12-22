@@ -1,0 +1,19 @@
+{
+  "name": "canvas_lambda",
+  "version": "0.1.0",
+  "description": "Canvas Lambda Function",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charoitel/aws-lambda-node-canvas.git"
+  },
+  "dependencies": {
+    "canvas": "^1.6.8"
+  },
+  "author": "Charoite Lee",
+  "contributors": [
+    "Charoite Lee <charoite.lee@silkpacific.com> (https://www.silkpacific.com)"
+  ],
+  "license": "MIT"
+}
+
