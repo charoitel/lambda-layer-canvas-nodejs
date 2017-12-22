@@ -3,7 +3,7 @@ Blueprint for generating graphics using node-canvas, a Cairo backed Canvas imple
 
 Available on the [AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/#/applications/arn:aws:serverlessrepo:us-east-1:990551184979:applications~Canvas).
 
-## Usage
+## Set Up Your Own Canvas Lambda Function
 1. Login to **AWS Management Console**
 2. Go to **AWS Lambda Console**
 3. Choose **Create Function**
