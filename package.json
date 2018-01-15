@@ -8,7 +8,7 @@
     "url": "https://github.com/charoitel/aws-lambda-node-canvas.git"
   },
   "dependencies": {
-    "canvas": "^1.6.8"
+    "canvas": "^1.6.9"
   },
   "author": "Charoite Lee",
   "contributors": [
