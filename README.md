@@ -14,3 +14,5 @@ Available on the [AWS Serverless Application Repository](https://serverlessrepo.
 8. Click **Deploy** and wait to complete
 9. Your *Canvas Lambda* function should be ready
 
+## To-Do
+Enable graphics generation using AWS Lambda event data.
