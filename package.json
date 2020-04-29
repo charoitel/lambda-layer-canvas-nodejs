@@ -1,0 +1,23 @@
+{
+  "name": "lambda-node-canvas",
+  "version": "1.0.0",
+  "description": "AWS Lambda blueprint for generating and manipulating graphics using node-canvas, a Cairo backed Canvas implementation for NodeJS by @Automattic.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charoitel/lambda-node-canvas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charoitel/lambda-node-canvas/issues"
+  },
+  "homepage": "https://github.com/charoitel/lambda-node-canvas#readme",
+  "dependencies": {
+    "canvas": "^2.6.1"
+  }
+}
