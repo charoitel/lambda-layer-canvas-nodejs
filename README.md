@@ -2,11 +2,11 @@
 
 Due to the size of dependencies, i.e. node_modules folder, it is no longer available to edit any serverless app based on this blueprint using AWS Lambda inline editor with node-canvas version 2.0+. So, I update this repository as resource space for those who would like to use node-canvas in their AWS Lambda functions.
 
-In order to use node-canvas on AWS Lambda, there is an official guide from @Automattic. For native dependencies like libcairo.so.2 and others, you may use the files I uploaded to this repostory.
+In order to use node-canvas on AWS Lambda, there is an official guide from [Automattic](https://github.com/Automattic). For native dependencies like libcairo.so.2 and others, you may use the files I uploaded to this repostory.
 
 # Getting node-canvas works on AWS Lambda
 
-Node canvas is a Cairo backed Canvas implementation for NodeJS by @Automattic. Following is the snapshot of Installation Guide from [official wiki](https://github.com/Automattic/node-canvas) last updated on Sep 3, 2018.
+Node canvas is a Cairo backed Canvas implementation for NodeJS by [Automattic](https://github.com/Automattic). Following is the snapshot of Installation Guide from [official wiki](https://github.com/Automattic/node-canvas) last updated on Sep 3, 2018.
 
 **Canvas 2.0 and 1.6 works out-of-the-box on AWS Lambda thanks to prebuilds. However, you must build your Lambda ZIP file on Linux (or a Linux Docker container) so that the correct prebuilt binary is included.** See https://github.com/Automattic/node-canvas/issues/1231 for more info.
 
