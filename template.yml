@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+    Transform:
+        Type: AWS::Serverless::Function
+        Properties:
+            Handler: index.handler
+            FunctionName: cairoCanvas
+            Runtime: nodejs12.x
+            CodeUri: s3://charoitel-serverless-repo/lambda-node-canvas_v0.2.0.zip
+            Timeout: 10
+            Layers:
+                - !Ref NodeCanvasLayer
+    NodeCanvasLayer:
+        Type: AWS::Serverless::LayerVersion
+        Properties:
+            LayerName: node-canvas_v2-6-1
+            ContentUri: s3://charoitel-serverless-repo/node-canvas-layer_v2.6.1.zip
+            CompatibleRuntimes:
+                - nodejs12.x
+            RetentionPolicy: Retain
+          

@@ -1,6 +1,6 @@
 let {createCanvas} = require("canvas");
 
-function hello(event, context, callback) {
+exports.handler = function(event, context, callback) {
 	let canvas = createCanvas(200, 200),
 		ctx = canvas.getContext('2d');
 
@@ -19,5 +19,3 @@ function hello(event, context, callback) {
 
 	callback(null, '<img src="' + canvas.toDataURL() + '" />');
 }
-
-module.exports = {hello};
