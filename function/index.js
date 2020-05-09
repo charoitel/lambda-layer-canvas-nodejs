@@ -1,6 +1,6 @@
 let {createCanvas} = require("canvas");
 
-exports.handler = function(event, context, callback) {
+exports.handler = async (event) => {
 	let canvas = createCanvas(200, 200),
 		ctx = canvas.getContext('2d');
 
@@ -17,5 +17,12 @@ exports.handler = function(event, context, callback) {
 	ctx.lineTo(50 + text.width, 102);
 	ctx.stroke();
 
-	callback(null, '<img src="' + canvas.toDataURL() + '" />');
+    return {
+        statusCode: 200,
+        headers: {
+            'Content-Type': 'image/png'
+        },
+        body: canvas.toDataURL().replace(/data:image\/png;base64,/, ''),
+        isBase64Encoded: true
+    }
 }
