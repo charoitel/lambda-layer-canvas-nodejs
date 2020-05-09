@@ -1,4 +1,4 @@
-let {createCanvas} = require("canvas");
+let {createCanvas} = require('canvas');
 
 exports.handler = async (event) => {
 	let canvas = createCanvas(200, 200),
