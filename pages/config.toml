@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://canvas.graphics/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Serverless Canvas Engine"
 theme = "ananke"
