@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+    NodeCanvasLayer:
+        Type: AWS::Serverless::LayerVersion
+        Properties:
+            LayerName: canvas-nodejs
+            ContentUri: s3://lambda-layers/canvas-nodejs_v2.6.1.zip
+            CompatibleRuntimes:
+                - nodejs12.x
+            RetentionPolicy: Retain
+          
