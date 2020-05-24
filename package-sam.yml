@@ -5,8 +5,10 @@ Resources:
         Type: AWS::Serverless::LayerVersion
         Properties:
             LayerName: canvas-nodejs
-            ContentUri: s3://lambda-layers/canvas-nodejs_v2.6.1.zip
+            Description: canvas@2.6.1
+            ContentUri: s3://lambda-layer-charoitel/canvas-nodejs_v2.6.1.zip
             CompatibleRuntimes:
                 - nodejs12.x
             RetentionPolicy: Retain
+            LicenseInfo: MIT
           
