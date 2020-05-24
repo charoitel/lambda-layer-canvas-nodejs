@@ -8,7 +8,7 @@
 
 ## Getting started
 
-To get started, please visit https://github.com/charoitel/lambda-node-canvas/wiki/Getting-Started
+To get started, please visit https://github.com/charoitel/lambda-layer-canvas-nodejs/wiki/Getting-Started
 
 Made with ❤️ by Charoite Lee. Available on the [AWS Serverless Application Repository](https://aws.amazon.com/serverless)
 
