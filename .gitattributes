@@ -1,0 +1,1 @@
+librsvg-2.so.2 filter=lfs diff=lfs merge=lfs -text
