@@ -60,8 +60,8 @@ export class Canvas {
 	/** _Non standard._ The type of the canvas. */
 	readonly type: 'image'|'pdf'|'svg'
 
-	// This is a getter, but it's non-standard and I don't know why we export it.
-	// readonly stride: number;
+	/** _Non standard._ Getter. The stride used by the canvas. */
+	readonly stride: number;
 
 	/** Constant used in PNG encoding methods. */
 	readonly PNG_NO_FILTERS: number
@@ -78,7 +78,7 @@ export class Canvas {
 	/** Constant used in PNG encoding methods. */
 	readonly PNG_FILTER_PAETH: number
 
-	constructor(width: number, height: number, type?: 'pdf'|'svg')
+	constructor(width: number, height: number, type?: 'image'|'pdf'|'svg')
 
 	getContext(contextId: '2d', contextAttributes?: NodeCanvasRenderingContext2DSettings): NodeCanvasRenderingContext2D
 
@@ -126,15 +126,9 @@ export class Canvas {
 	toDataURL(mimeType: 'image/jpeg', config: JpegConfig, cb: (err: Error|null, result: string) => void): void
 	/** _Non-standard._ */
 	toDataURL(mimeType: 'image/jpeg', quality: number, cb: (err: Error|null, result: string) => void): void
-
-	/**
-	 * For PDF canvases, adds another page. If width and/or height are omitted,
-	 * the canvas's initial size is used.
-	 */
-	addPage(width?: number, height?: number): void
 }
 
-declare class NodeCanvasRenderingContext2D extends CanvasRenderingContext2D {
+export class NodeCanvasRenderingContext2D extends CanvasRenderingContext2D {
 	/**
 	 * _Non-standard_. Defaults to 'good'. Affects pattern (gradient, image,
 	 * etc.) rendering quality.
@@ -212,6 +206,12 @@ declare class NodeCanvasRenderingContext2D extends CanvasRenderingContext2D {
 	createPattern(...args: any[]): NodeCanvasCanvasPattern
 	createLinearGradient(x0: number, y0: number, x1: number, y1: number): NodeCanvasCanvasGradient;
 	createRadialGradient(x0: number, y0: number, r0: number, x1: number, y1: number, r1: number): NodeCanvasCanvasGradient;
+
+	/**
+	 * For PDF canvases, adds another page. If width and/or height are omitted,
+	 * the canvas's initial size is used.
+	 */
+	addPage(width?: number, height?: number): void
 }
 export { NodeCanvasRenderingContext2D as CanvasRenderingContext2D }
 
@@ -337,3 +337,5 @@ export const jpegVersion: string | undefined
 export const gifVersion: string | undefined
 /** freetype version. */
 export const freetypeVersion: string
+/** rsvg version. */
+export const rsvgVersion: string | undefined
