@@ -1,6 +1,6 @@
 # node-canvas
 
-[![Build Status](https://travis-ci.org/Automattic/node-canvas.svg?branch=master)](https://travis-ci.org/Automattic/node-canvas)
+![Test](https://github.com/Automattic/node-canvas/workflows/Test/badge.svg)
 [![NPM version](https://badge.fury.io/js/canvas.svg)](http://badge.fury.io/js/canvas)
 
 node-canvas is a [Cairo](http://cairographics.org/)-backed Canvas implementation for [Node.js](http://nodejs.org).
@@ -62,7 +62,7 @@ loadImage('examples/images/lime-cat.jpg').then((image) => {
 })
 ```
 
-## Upgrading from 2.x
+## Upgrading from 1.x to 2.x
 
 See the [changelog](https://github.com/Automattic/node-canvas/blob/master/CHANGELOG.md) for a guide to upgrading from 1.x to 2.x.
 
