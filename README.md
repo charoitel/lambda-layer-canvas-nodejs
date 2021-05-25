@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)&nbsp;&nbsp;[![Node.js](https://img.shields.io/badge/Node.js-14.x-green.svg)](https://nodejs.org/download/release/latest-v14.x/)
+
 # About node-canvas
 
 [node-canvas](https://github.com/Automattic/node-canvas) is a Cairo backed Canvas implementation for Node.js by [Automattic](https://github.com/Automattic). It implements the [Mozilla Web Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) as closely as possible. For the current API compliance, please check [Compatibility Status](https://github.com/Automattic/node-canvas/wiki/Compatibility-Status).
