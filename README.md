@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)&nbsp;&nbsp;[![Node.js](https://img.shields.io/badge/Node.js-14.x-green.svg)](https://nodejs.org/download/release/latest-v14.x/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)&nbsp;&nbsp;[![Node.js](https://img.shields.io/badge/Node.js-14.x-green.svg)](https://nodejs.org/download/release/latest-v14.x/)&nbsp;&nbsp;[![node-canvas](https://img.shields.io/badge/Canvas-2.8.0-brightgreen.svg)](https://github.com/Automattic/node-canvas)
 
 # About node-canvas
 
