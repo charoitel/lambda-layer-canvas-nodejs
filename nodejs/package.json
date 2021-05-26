@@ -1,6 +1,6 @@
 {
   "name": "nodejs",
-  "version": "1.0.0",
+  "version": "2.8.0",
   "description": "",
   "main": "index.js",
   "scripts": {
