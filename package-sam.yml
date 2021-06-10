@@ -6,7 +6,7 @@ Resources:
         Properties:
             LayerName: canvas-nodejs
             Description: canvas@2.8.0
-            ContentUri: s3://lambda-layer-charoitel/canvas-nodejs_v2.8.0.zip
+            ContentUri: s3://lambda-layer-charoitel/canvas-nodejs_v2.8.1.zip
             CompatibleRuntimes:
                 - nodejs14.x
             RetentionPolicy: Retain
