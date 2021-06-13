@@ -9,5 +9,5 @@ mv -f package-tmp.json package.json
 npm test
 cp package-lock.json ..
 cd ..
-rm ../canvas-nodejs_v$CANVAS_VERSION.zip
-zip -q -r ../canvas-nodejs_v$CANVAS_VERSION.zip . -x "LICENSE" "README.md" ".git*" "nodejs/test/*" "*.yml" "build-layer.sh"
+rm canvas-nodejs_v$CANVAS_VERSION.zip
+zip -q -r canvas-nodejs_v$CANVAS_VERSION.zip . -x "LICENSE" "README.md" ".git*" "nodejs/test/*" "*.yml" "build-layer.sh"
