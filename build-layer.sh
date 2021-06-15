@@ -1,5 +1,5 @@
 # Remove packaged layer if exists
-rm canvas-nodejs_v$CANVAS_VERSION.zip
+rm canvas-nodejs_v*.zip
 
 set -e
 
