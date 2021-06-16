@@ -1,12 +1,15 @@
-# Remove packaged layer if exists
-rm canvas-nodejs_v*.zip
-
 set -e
 
-# Start to build and package layer
-rm lib/*
+# Remove packaged layer if exists
+LAYER_ARCHIVE=canvas-nodejs_v*.zip
+if [ -f "$LAYER_ARCHIVE" ]; then
+    rm $LAYER_ARCHIVE
+fi
 
 # Clean and prepare Node.js modules and dependencies
+if [ "$(ls -A lib)" ]; then
+    rm lib/*
+fi
 cd nodejs
 rm -rf node_modules package*.json
 npm init -y
@@ -22,5 +25,5 @@ cp package-lock.json ..
 
 # Prepare and package layer
 cd ..
-find nodejs/node_modules -type f -name "*.node" 2>/dev/null | grep -v "obj\.target" | xargs ldd | awk 'NF == 4 { system("cp " $3 " lib") }'
-zip -q -r canvas-nodejs_v$CANVAS_VERSION.zip . -x "LICENSE" "README.md" ".git*" "nodejs/test/*" "*.yml" "build-layer.sh"
+find nodejs/node_modules -type f -name '*.node' 2>/dev/null | grep -v 'obj\.target' | xargs ldd | awk 'NF == 4 { system("cp " $3 " lib") }'
+zip -q -r canvas-nodejs_v$CANVAS_VERSION.zip . -x LICENSE README.md .git/**\* nodejs/test/**\* *.yml build-layer.sh
