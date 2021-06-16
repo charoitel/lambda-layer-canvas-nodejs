@@ -1,9 +1,8 @@
 set -e
 
 # Remove packaged layer if exists
-LAYER_ARCHIVE=canvas-nodejs_v*.zip
-if [ -f "$LAYER_ARCHIVE" ]; then
-    rm $LAYER_ARCHIVE
+if [ -n "$(find . -name 'canvas-nodejs_v*.zip')" ]; then
+    rm canvas-nodejs_v*.zip
 fi
 
 # Clean and prepare Node.js modules and dependencies
