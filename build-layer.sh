@@ -1,3 +1,10 @@
+#!/usr/bin/bash
+#
+# Setup environment before build layer
+# sudo yum update -y
+# sudo yum groupinstall "Development Tools" -y
+# sudo yum install gcc-c++ cairo-devel pango-devel libjpeg-turbo-devel giflib-devel librsvg2-devel pango-devel bzip2-devel jq
+#
 set -e
 
 # Remove packaged layer if exists
