@@ -27,7 +27,6 @@ npm init -y
 npm install canvas --build-from-source
 npm install fabric
 npm install konva-node
-npm install paper-jsdom-canvas
 npm install mocha --save-dev
 jq --arg LAYER_NAME "$LAYER_NAME" --arg LAYER_DESCRIPTION "$LAYER_DESCRIPTION" --arg LAYER_VERSION "$LAYER_VERSION" --arg LAYER_AUTHOR "$LAYER_AUTHOR" '.name = $LAYER_NAME | .description = $LAYER_DESCRIPTION | .version = $LAYER_VERSION | .license = "MIT" | .author = $LAYER_AUTHOR | .scripts.test = "mocha"' package.json > package-tmp.json
 mv -f package-tmp.json package.json
