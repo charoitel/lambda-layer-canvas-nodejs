@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/sh
 #
 # Setup environment before build layer
 # sudo yum update -y
