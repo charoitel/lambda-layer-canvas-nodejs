@@ -12,3 +12,7 @@ Resources:
             RetentionPolicy: Retain
             LicenseInfo: MIT
           
+Outputs:
+    LayerVersion:
+        Description: Layer ARN Reference
+        Value: !Ref NodeCanvasLayer
