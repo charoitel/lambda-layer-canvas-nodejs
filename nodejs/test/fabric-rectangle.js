@@ -1,7 +1,7 @@
 let fabric = require('fabric').fabric;
 var assert = require('assert');
 
-describe('Canvas', function() {
+describe('Fabric', function() {
     describe('#drawRectangle', function() {
       it('should draw a red rectangle', function() {
         var rect = new fabric.Rect({

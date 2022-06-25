@@ -26,8 +26,10 @@ Since AWS Lambda is a secure and isolated runtime and execution environment, thi
 
 [Konva](https://github.com/konvajs/konva) is a framework that enables high performance animations, transitions, node nesting, layering, filtering, caching, event handling for desktop and mobile applications, and much more.
 
+> **Note:** From Canvas Layer v2.9.3 release, since konva-node package is deprecated, konva package is used directly through build script.
+
 ## Getting started
 
 To get started, please visit https://github.com/charoitel/lambda-layer-canvas-nodejs/wiki/Getting-Started
 
-Made with ❤️ by Charoite Lee. Available on the [AWS Serverless Application Repository](https://aws.amazon.com/serverless)
+Made with ❤️ by Charoite Lee and contributors. Available on the [AWS Serverless Application Repository](https://aws.amazon.com/serverless)
