@@ -14,7 +14,7 @@ set -e
 
 LAYER_NAME=canvas-nodejs
 LAYER_DESCRIPTION="AWS Lambda Layer with node-canvas and its dependencies packaged, provides a Cairo backed Mozilla Web Canvas API implementation with additional features."
-LAYER_VERSION=2.10.1
+LAYER_VERSION=2.11.0
 LAYER_AUTHOR="Charoite Lee"
 
 # Remove packaged layer if exists
