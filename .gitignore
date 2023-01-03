@@ -1,7 +1,5 @@
 nodejs/node_modules
-nodejs/node14/node_modules
-nodejs/node16/node_modules
-nodejs/node18/node_modules
+nodejs/node*/node_modules
 nodejs/package*.json
 package*.json
 canvas-nodejs_v*.zip
