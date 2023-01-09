@@ -4,12 +4,12 @@ var assert = require('assert');
 describe('Font', function() {
   describe('#registerFont', function() {
     it('should register defined Font by name', function() {
-      registerFont('/usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf', { family: 'DejaVu Sans' });
+      registerFont('/usr/share/fonts/dejavu/DejaVuSans.ttf', { family: 'DejaVu Sans' });
     });
   }),
   describe('#fillText', function() {
     it('should write defined Text in canvas', function() {
-      registerFont('/usr/share/fonts/dejavu-sans-fonts/DejaVuSans-Bold.ttf', { family: 'DejaVu Sans Bold' });
+      registerFont('/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf', { family: 'DejaVu Sans Bold' });
       let canvas = createCanvas(300, 300);
       let ctx1 = canvas.getContext('2d');
       ctx1.font = '30px';

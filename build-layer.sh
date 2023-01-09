@@ -42,5 +42,5 @@ cp package-lock.json ..
 
 # Prepare and package layer
 cd ..
-find nodejs/node*/node_modules -type f -name '*.node' 2>/dev/null | grep -v 'obj\.target' | xargs ldd | awk 'NF == 4 { system("cp " $3 " lib") }'
+find nodejs/node* -type f -name '*.node' 2>/dev/null | grep -v 'obj\.target' | xargs ldd | awk 'NF == 4 { system("cp " $3 " lib") }'
 zip -q -r canvas-nodejs_v$LAYER_VERSION.zip . -x LICENSE README.md .git/**\* nodejs/test/**\* *.yml build-layer.sh
