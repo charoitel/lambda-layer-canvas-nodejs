@@ -17,6 +17,10 @@ LAYER_DESCRIPTION="AWS Lambda Layer with node-canvas and its dependencies packag
 LAYER_VERSION=2.11.0
 LAYER_AUTHOR="Charoite Lee"
 
+DOT_CHAR="."
+NODE_VERSION=$(node -v)
+NODE_VERSION=${NODE_VERSION:1}
+
 # Remove packaged layer if exists
 if [ -n "$(find . -name 'canvas-nodejs_v*.zip')" ]; then
     rm canvas-nodejs_v*.zip
@@ -27,7 +31,7 @@ if [ "$(ls -A lib)" ]; then
     rm lib/*
 fi
 cd nodejs
-rm -rf node_modules package*.json ../package-lock.json
+rm -rf node_modules node${NODE_VERSION%%$DOT_CHAR*} package*.json ../package-lock.json
 npm init -y
 npm install canvas --build-from-source
 npm install fabric
@@ -41,6 +45,8 @@ npm test
 cp package-lock.json ..
 
 # Prepare and package layer
+mkdir node${NODE_VERSION%%$DOT_CHAR*}
+mv node_modules node${NODE_VERSION%%$DOT_CHAR*}
 cd ..
 find nodejs/node* -type f -name '*.node' 2>/dev/null | grep -v 'obj\.target' | xargs ldd | awk 'NF == 4 { system("cp " $3 " lib") }'
-zip -q -r canvas-nodejs_v$LAYER_VERSION.zip . -x LICENSE README.md .git/**\* nodejs/test/**\* *.yml build-layer.sh
+zip -q -r canvas-nodejs_v$LAYER_VERSION.zip . -x LICENSE README.md .git/**\* .github/**\* .gitignore nodejs/test/**\* *.yml build-layer.sh
