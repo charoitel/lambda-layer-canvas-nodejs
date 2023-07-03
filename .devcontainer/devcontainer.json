@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/amazonlinux",
+  "image": "public.ecr.aws/amazonlinux/amazonlinux:2",
   "features": {
   }
 }
