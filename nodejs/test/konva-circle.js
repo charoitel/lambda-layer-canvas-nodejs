@@ -1,18 +1,18 @@
-let { Stage, Layer, Circle } = require('konva').default;
+let Konva = require('konva');
 var assert = require('assert');
 
 describe('Konva', function () {
     describe('#drawCircle', function () {
         it('should draw a red circle', function () {
-            const stage = new Stage({
+            const stage = new Konva.Stage({
                 width: 500,
                 height: 500
             });
             // then create layer
-            var layer = new Layer();
+            var layer = new Konva.Layer();
 
             // create our shape
-            var circle = new Circle({
+            var circle = new Konva.Circle({
                 x: stage.width() / 2,
                 y: stage.height() / 2,
                 radius: 70,
