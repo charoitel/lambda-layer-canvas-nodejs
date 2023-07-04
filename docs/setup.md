@@ -4,7 +4,45 @@ title: Setup
 permalink: /setup/
 ---
 
-## Getting started
+# Prerequisites
+
+In order to start to use [lambda-layer-canvas-nodejs](https://github.com/charoitel/lambda-layer-canvas-nodejs) published on [AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:990551184979:applications~lambda-layer-canvas-nodejs), you must have your AWS account with following services available:
+
+* [AWS Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo)
+* [AWS Lambda](https://aws.amazon.com/lambda)
+
+# Serverless application deployment
+
+Once you have your AWS account ready, there are two ways to deploy [lambda-layer-canvas-nodejs](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:990551184979:applications~lambda-layer-canvas-nodejs) and make it available in your AWS Lambda console:
+
+* Deploy through AWS Serverless Application Repository
+* Deploy through AWS Lambda console
+
+## Deploy through AWS Serverless Application Repository
+
+1. Open https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:990551184979:applications~lambda-layer-canvas-nodejs
+2. Click **Deploy** button
+3. Login to your AWS account if you haven't login yet
+4. Edit **_Name_** (Optional)
+5. Click **Deploy** button
+6. Deployment is started and in progress
+7. Check your AWS Lambda console once the deployment is completed
+
+## Deploy through AWS Lambda console 
+
+1. Login to your AWS account and open your AWS Lambda console
+2. Click **Create function** button
+3. Select **_Browse serverless app repository_**
+4. Input `lambda-layer-canvas-nodejs` into search box and press _Enter_ key
+5. Click on the title of `lambda-layer-canvas-nodejs` card
+6. Edit **_Name_** (Optional)
+7. Click **Deploy** button
+8. Deployment is started and in progress
+9. Check your AWS Lambda console once the deployment is completed
+
+## Using canvas layer
+
+After the deployment is completed, you may refer to [[Using Canvas Layer|Using Canvas Layer]] and follow an example where a Lambda function uses the canvas layer to generate PNG graphic with colored text and circle rendered.
 
 ## Environment setup
 
