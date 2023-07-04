@@ -1,0 +1,4 @@
+title: Canvas Layer for AWS Lambda
+description: Cairo backed Mozilla Web Canvas API layer for AWS Lambda
+
+theme: jekyll-theme-minimal
