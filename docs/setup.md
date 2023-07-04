@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Getting Started
-permalink: /getting-started/
+title: Setup
+permalink: /setup/
 ---
 
 ## Getting started
