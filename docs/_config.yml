@@ -6,6 +6,6 @@ url: ""
 twitter_username: charoitel
 github_username:  charoitel
 
-theme: minima
+theme: jekyll-theme-minima
 plugins:
   - jekyll-feed
