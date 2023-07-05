@@ -6,10 +6,10 @@ permalink: /use/
 
 ## Using canvas layer in function
 
-Before starting to use the canvas layer, it is required to have the layer deployed through AWS Serverless Application Repository or AWS Lambda console, you may refer [[Getting Started|Getting Started]] for details. Then, you may create your Lambda function using:
+Before starting to use the canvas layer, it is required to have the layer deployed through AWS Serverless Application Repository or AWS Lambda console, you may refer [Setup](/setup/) for details. Then, you may create your Lambda function using:
 
 * AWS Lambda console editor; or
-* [[Local tool in your machine|Local Development]]; or
+* Local tool in your machine; or
 * Any way you may prefer
 
 Following is an example where a Lambda function uses the canvas layer to generate PNG graphic with colored text and circle rendered. There is no environment variable setting is required in this example.
@@ -85,7 +85,7 @@ Following is the sample response from the above example function code.
 ```
 As a result, the generated PNG graphic with colored text and circle rendered may look like as follow.
 
-![](./DejaVuSansCircle.png)
+![](/assets/DejaVuSansCircle.png)
 
 # References
 
