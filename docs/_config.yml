@@ -1,11 +1,5 @@
 title: Canvas Layer for AWS Lambda
 description: >
-  Cairo backed Mozilla Web Canvas API implementation layer for AWS Lambda.
-
-author: Charoite Lee and contributors
-github_username: charoitel
-
+  Cairo backed Mozilla Web Canvas API implementation layer for AWS Lambda
 theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+show_feed_subscribe: false

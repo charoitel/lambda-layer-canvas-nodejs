@@ -28,7 +28,7 @@ Once you have your AWS account ready, there are two ways to deploy [lambda-layer
 6. Deployment is started and in progress
 7. Check your AWS Lambda console once the deployment is completed
 
-## Deploy through AWS Lambda console 
+## Deploy through AWS Lambda console
 
 1. Login to your AWS account and open your AWS Lambda console
 2. Click **Create function** button
