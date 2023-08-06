@@ -2,4 +2,3 @@ title: Canvas Layer for AWS Lambda
 description: >
   Cairo backed Mozilla Web Canvas API implementation layer for AWS Lambda
 theme: minima
-show_feed_subscribe: false
