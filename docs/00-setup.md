@@ -31,8 +31,8 @@ Once you have your AWS account ready, there are two ways to deploy [lambda-layer
 ### Deploy through AWS Lambda console
 
 1. Login to your AWS account and open your AWS Lambda console
-2. Click **Create function** button
-3. Select **_Browse serverless app repository_**
+2. Click **Create application** button
+3. Select **_Serverless application_**
 4. Input `lambda-layer-canvas-nodejs` into search box and press _Enter_ key
 5. Click on the title of `lambda-layer-canvas-nodejs` card
 6. Edit **_Name_** (Optional)
