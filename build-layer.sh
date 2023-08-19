@@ -14,7 +14,7 @@ set -e
 
 LAYER_NAME=canvas-nodejs
 LAYER_DESCRIPTION="AWS Lambda Layer with node-canvas and its dependencies packaged, provides a Cairo backed Mozilla Web Canvas API implementation with additional features."
-LAYER_VERSION=2.11.2
+LAYER_VERSION=2.11.3
 LAYER_AUTHOR="Charoite Lee"
 
 DOT_CHAR="."
@@ -38,7 +38,6 @@ npm install canvas --build-from-source
 npm install fabric
 npm install konva
 npm install chart.js
-npm install @pixi/node
 npm install mocha --save-dev
 jq --arg LAYER_NAME "$LAYER_NAME" --arg LAYER_DESCRIPTION "$LAYER_DESCRIPTION" --arg LAYER_VERSION "$LAYER_VERSION" --arg LAYER_AUTHOR "$LAYER_AUTHOR" --arg SEMVER_VERSION "$SEMVER_VERSION" '.name = $LAYER_NAME | .description = $LAYER_DESCRIPTION | .version = $LAYER_VERSION | .license = "MIT" | .author = $LAYER_AUTHOR | .scripts.test = "mocha" | .overrides.semver = $SEMVER_VERSION ' package.json > package-tmp.json
 mv -f package-tmp.json package.json
