@@ -23,7 +23,6 @@ Since AWS Lambda is a secure and isolated runtime and execution environment, the
 - [Chart.js](#chartjs-support)
 - [Fabric.js](#fabricjs-support)
 - [Konva](#konva-support)
-- [PixiJS](#pixijs-support)
 
 ### Chart.js support
 
@@ -36,7 +35,3 @@ Since AWS Lambda is a secure and isolated runtime and execution environment, the
 ### Konva support
 
 [Konva](https://github.com/konvajs/konva) enables high performance animations, transitions, node nesting, layering, filtering, caching, event handling for desktop and mobile applications, and much more.
-
-### PixiJS support
-
-[PixiJS](https://github.com/pixijs/pixijs) aims to provide a fast, lightweight 2D library that works across all devices. The renderer allows everyone to enjoy the power of hardware acceleration without prior knowledge of WebGL.
