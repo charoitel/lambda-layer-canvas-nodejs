@@ -42,7 +42,7 @@ Once you have your AWS account ready, there are two ways to deploy [lambda-layer
 
 ### Using canvas layer
 
-After the deployment is completed, you may refer [usage example]({{ site.baseurl }}{% link 01-use.md %}) and follow the example where a Lambda function uses the canvas layer to generate PNG graphic with colored text and circle rendered.
+After the deployment is completed, you may refer [usage example](/lambda-layer-canvas-nodejs/{% link 01-use.md %}) and follow the example where a Lambda function uses the canvas layer to generate PNG graphic with colored text and circle rendered.
 
 ## Setup environment to build the layer
 

@@ -2,7 +2,6 @@ title: Canvas Layer for AWS Lambda
 description: >
   Cairo backed Mozilla Web Canvas API implementation layer for AWS Lambda
 theme: minima
-baseurl: /lambda-layer-canvas-nodejs
 minima:
   social_links:
     - { platform: github,         user_url: "https://github.com/charoitel/lambda-layer-canvas-nodejs" }

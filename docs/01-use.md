@@ -6,7 +6,7 @@ permalink: /use/
 
 ## Using canvas layer in function
 
-Before starting to use the canvas layer, it is required to have the layer deployed through AWS Serverless Application Repository or AWS Lambda console, you may refer [setup information]({{ site.baseurl }}{% link 00-setup.md %}) for details. Then, you may create your Lambda function using:
+Before starting to use the canvas layer, it is required to have the layer deployed through AWS Serverless Application Repository or AWS Lambda console, you may refer [setup information](/lambda-layer-canvas-nodejs/{% link 00-setup.md %}) for details. Then, you may create your Lambda function using:
 
 * AWS Lambda console editor; or
 * Local tool in your machine; or
