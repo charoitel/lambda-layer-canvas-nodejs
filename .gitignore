@@ -1,3 +1,7 @@
+.idea/
+docs/.jekyll-cache
+docs/_site
+docs/Gemfile.lock
 nodejs/node_modules
 nodejs/node*/node_modules
 nodejs/package*.json

@@ -1,6 +1,8 @@
-# Canvas Layer for AWS Lambda
+---
+layout: home
+---
 
-![GitHub](https://img.shields.io/github/license/charoitel/lambda-layer-canvas-nodejs)
+![GitHub](https://img.shields.io/github/license/charoitel/lambda-layer-canvas-nodejs)&nbsp;&nbsp;![Watch on GitHub](https://img.shields.io/github/watchers/charoitel/lambda-node-canvas.svg?style=social)&nbsp;&nbsp;![Fork on GitHub](https://img.shields.io/github/forks/charoitel/lambda-node-canvas.svg?style=social)&nbsp;&nbsp;![Star on GitHub](https://img.shields.io/github/stars/charoitel/lambda-node-canvas.svg?style=social)
 
 Canvas Layer for AWS Lambda is published and available on [AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:990551184979:applications~lambda-layer-canvas-nodejs), and GitHub at [charoitel/lambda-layer-canvas-nodejs](https://github.com/charoitel/lambda-layer-canvas-nodejs). The layer aims to provide a Cairo backed Mozilla Web Canvas API implementation layer for AWS Lambda, powered by [node-canvas](https://github.com/Automattic/node-canvas).
 
