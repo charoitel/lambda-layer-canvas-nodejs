@@ -44,7 +44,7 @@ Once you have your AWS account ready, there are two ways to deploy [lambda-layer
 
 After the deployment is completed, you may refer to [usage example]({% link 01-use.md %}) and follow the example where a Lambda function uses the canvas layer to generate PNG graphic with colored text and circle rendered.
 
-### Setup environment to build the layer
+## Setup environment to build the layer
 
 Alternately, you may setup your own environment to build the layer according to your specific needs. When using the layer with nodejs-18.x in Amazon Linux, it requires glibc-2.28, meanwhile, compiling glibc-2.28 requires make-4.x or later[^1].
 
