@@ -4,21 +4,21 @@ title: Setup
 permalink: /setup/
 ---
 
-# Prerequisites
+## Prerequisites
 
 In order to start to use [lambda-layer-canvas-nodejs](https://github.com/charoitel/lambda-layer-canvas-nodejs) published on [AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:990551184979:applications~lambda-layer-canvas-nodejs), you must have your AWS account with following services available:
 
-* [AWS Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo)
-* [AWS Lambda](https://aws.amazon.com/lambda)
+- [AWS Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo)
+- [AWS Lambda](https://aws.amazon.com/lambda)
 
-# Serverless application deployment
+## Serverless application deployment
 
 Once you have your AWS account ready, there are two ways to deploy [lambda-layer-canvas-nodejs](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:990551184979:applications~lambda-layer-canvas-nodejs) and make it available in your AWS Lambda console:
 
-* Deploy through AWS Serverless Application Repository
-* Deploy through AWS Lambda console
+- [Deploy through AWS Serverless Application Repository](#deploy-through-aws-serverless-application-repository)
+- [Deploy through AWS Lambda console](#deploy-through-aws-lambda-console)
 
-## Deploy through AWS Serverless Application Repository
+### Deploy through AWS Serverless Application Repository
 
 1. Open https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:990551184979:applications~lambda-layer-canvas-nodejs
 2. Click **Deploy** button
@@ -28,7 +28,7 @@ Once you have your AWS account ready, there are two ways to deploy [lambda-layer
 6. Deployment is started and in progress
 7. Check your AWS Lambda console once the deployment is completed
 
-## Deploy through AWS Lambda console
+### Deploy through AWS Lambda console
 
 1. Login to your AWS account and open your AWS Lambda console
 2. Click **Create function** button
@@ -40,13 +40,13 @@ Once you have your AWS account ready, there are two ways to deploy [lambda-layer
 8. Deployment is started and in progress
 9. Check your AWS Lambda console once the deployment is completed
 
-## Using canvas layer
+### Using canvas layer
 
-After the deployment is completed, you may refer to [[Using Canvas Layer|Using Canvas Layer]] and follow an example where a Lambda function uses the canvas layer to generate PNG graphic with colored text and circle rendered.
+After the deployment is completed, you may refer to [usage example]({% link 01-use.md %}) and follow the example where a Lambda function uses the canvas layer to generate PNG graphic with colored text and circle rendered.
 
-## Environment setup
+### Setup environment to build the layer
 
-When using nodejs-18.x in Amazon Linux, it requires glibc-2.28, meanwhile, compiling glibc-2.28 requires make-4.x or later[^1].
+Alternately, you may setup your own environment to build the layer according to your specific needs. When using the layer with nodejs-18.x in Amazon Linux, it requires glibc-2.28, meanwhile, compiling glibc-2.28 requires make-4.x or later[^1].
 
 ```console
 $ wget https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
@@ -90,8 +90,10 @@ GLIBC_2.28
 GLIBC_PRIVATE
 ...
 ```
+
+Once your environment is ready, you may execute the build layer script, ``` build-layer.sh ```, to build the layer and deploy through the AWS Lambda console.
+
 ---
 
 [^1]: [Centos 7 升级 Glibc-2.28](https://cloud.tencent.com/developer/article/2021784)
-
 [^2]: [CentOS 7.6 编译安装最新版本glibc2.30 实录](https://www.jianshu.com/p/1070373a50f6)

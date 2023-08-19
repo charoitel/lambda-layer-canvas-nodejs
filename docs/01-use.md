@@ -6,7 +6,7 @@ permalink: /use/
 
 ## Using canvas layer in function
 
-Before starting to use the canvas layer, it is required to have the layer deployed through AWS Serverless Application Repository or AWS Lambda console, you may refer [Setup](/setup/) for details. Then, you may create your Lambda function using:
+Before starting to use the canvas layer, it is required to have the layer deployed through AWS Serverless Application Repository or AWS Lambda console, you may refer to [setup information](/setup/) for details. Then, you may create your Lambda function using:
 
 * AWS Lambda console editor; or
 * Local tool in your machine; or
@@ -16,7 +16,7 @@ Following is an example where a Lambda function uses the canvas layer to generat
 
 ## Function structure
 
-The setup of the function may look like the following structure. For font file, you may use any supported font file you like, in this example, we are going to use DejaVu Sans which could be originally found in Amazon Linux 2 EC2 instance.
+The setup of the function may look like the following structure. For font file, you may use any supported font file you like, in this example, we are going to use DejaVu Sans[^2] which could be originally found in Amazon Linux 2 EC2 instance.
 
 ```
 /var/task/
@@ -29,7 +29,7 @@ The setup of the function may look like the following structure. For font file, 
 
 ## Font configuration using fonts.config
 
-Since AWS Lambda does not appear to support even the basic fonts on its own, so we create the fonts directory at the root directory for our Lambda function with following font configuration file.
+Since AWS Lambda does not appear to support even the basic fonts on its own, so we create the fonts directory at the root directory for our Lambda function with following font configuration file[^1].
 
 ```xml
 <?xml version="1.0"?>
@@ -87,7 +87,7 @@ As a result, the generated PNG graphic with colored text and circle rendered may
 
 ![](/assets/DejaVuSansCircle.png)
 
-# References
+---
 
-1. [AWS Lambda Fonts & libfontconfig](https://medium.com/creditorwatch/aws-lambda-fonts-libfontconfig-5e837281a4ce)
-2. [DejaVu Fonts](https://dejavu-fonts.github.io/)
+[^1]: [AWS Lambda Fonts & libfontconfig](https://medium.com/creditorwatch/aws-lambda-fonts-libfontconfig-5e837281a4ce)
+[^2]: [DejaVu Fonts](https://dejavu-fonts.github.io/)
