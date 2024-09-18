@@ -13,14 +13,14 @@
 set -e
 
 LAYER_NAME=canvas-nodejs
-LAYER_DESCRIPTION="AWS Lambda Layer with node-canvas and its dependencies packaged, provides a Cairo backed Mozilla Web Canvas API implementation with additional features."
-LAYER_VERSION=2.11.3
+LAYER_DESCRIPTION="Cairo backed Mozilla Web Canvas API implementation layer for AWS Lambda"
+LAYER_VERSION=2.11.4
 LAYER_AUTHOR="Charoite Lee"
 
 DOT_CHAR="."
 NODE_VERSION=$(node -v)
 NODE_VERSION=${NODE_VERSION:1}
-SEMVER_VERSION=7.5.4
+SEMVER_VERSION=7.6.3
 
 # Remove packaged layer if exists
 if [ -n "$(find . -name 'canvas-nodejs_v*.zip')" ]; then
@@ -32,6 +32,9 @@ if [ "$(ls -A lib)" ]; then
     rm lib/*
 fi
 cd nodejs
+if [ "$(ls -A node*)" ]; then
+    rm -rf node*
+fi
 rm -rf node_modules node${NODE_VERSION%%$DOT_CHAR*} package*.json ../package-lock.json
 npm init -y
 npm install canvas --build-from-source
@@ -51,5 +54,5 @@ npm rm mocha
 mkdir node${NODE_VERSION%%$DOT_CHAR*}
 mv node_modules node${NODE_VERSION%%$DOT_CHAR*}
 cd ..
-find nodejs/node* -type f -name '*.node' 2>/dev/null | grep -v 'obj\.target' | xargs ldd | awk 'NF == 4 { system("cp " $3 " lib") }'
-zip -q -r canvas-nodejs_v$LAYER_VERSION.zip . -x LICENSE README.md .git/**\* .github/**\* .gitignore nodejs/test/**\* *.yml build-layer.sh
+find nodejs/node${NODE_VERSION%%$DOT_CHAR*} -type f -name '*.node' 2>/dev/null | grep -v 'obj\.target' | xargs ldd | awk 'NF == 4 { system("cp " $3 " lib") }'
+zip -q -r canvas-nodejs_v$LAYER_VERSION-node${NODE_VERSION%%$DOT_CHAR*}.zip . -x LICENSE README.md .git/**\* .github/**\* .gitignore nodejs/test/**\* *.yml build-layer.sh
