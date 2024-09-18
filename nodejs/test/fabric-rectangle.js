@@ -1,4 +1,4 @@
-let fabric = require('fabric').fabric;
+let fabric = require('fabric/node');
 var assert = require('assert');
 
 describe('Fabric', function() {
