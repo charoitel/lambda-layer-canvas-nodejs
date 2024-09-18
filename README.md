@@ -26,10 +26,16 @@ Since AWS Lambda is a secure and isolated runtime and execution environment, the
 
 [Chart.js](https://github.com/chartjs/chart.js) provides a set of frequently used chart types, plugins, and customization options. In addition to a reasonable set of built-in chart types, there are also community-maintained chart types.
 
+> Current supported version chart.js@3.9.1 with chartjs-node-canvas@4.1.6
+
 ### Fabric.js support
 
 [Fabric.js](https://github.com/fabricjs/fabric.js) provides a missing and interactive object model for canvas, as well as an SVG parser, layer of interactivity, and a whole suite of other indispensable tools.
 
+> Current supported version fabric@6.4.2
+
 ### Konva support
 
 [Konva](https://github.com/konvajs/konva) enables high performance animations, transitions, node nesting, layering, filtering, caching, event handling for desktop and mobile applications, and much more.
+
+> Current supported version konva@9.3.15
