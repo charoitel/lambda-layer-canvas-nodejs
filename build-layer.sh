@@ -6,7 +6,7 @@
 # yum install gcc-c++ cairo-devel pango-devel libjpeg-turbo-devel giflib-devel librsvg2-devel pango-devel bzip2-devel jq python3 -y
 #
 # Setting Up Node.js, refer https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html for details
-# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 # . ~/.nvm/nvm.sh
 # nvm install --lts
 #
@@ -14,13 +14,13 @@ set -e
 
 LAYER_NAME=canvas-nodejs
 LAYER_DESCRIPTION="Cairo backed Mozilla Web Canvas API implementation layer for AWS Lambda"
-LAYER_VERSION=2.11.4
+LAYER_VERSION=3.1.0
 LAYER_AUTHOR="Charoite Lee"
 
 DOT_CHAR="."
 NODE_VERSION=$(node -v)
 NODE_VERSION=${NODE_VERSION:1}
-SEMVER_VERSION=7.6.3
+SEMVER_VERSION=7.7.1
 
 # Remove packaged layer if exists
 if [ -n "$(find . -name 'canvas-nodejs_v*.zip')" ]; then
